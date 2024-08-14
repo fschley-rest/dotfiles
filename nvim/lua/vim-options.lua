@@ -10,6 +10,16 @@ vim.g.mapleader = " "
 vim.g.background = "light"
 
 vim.opt.swapfile = false
+vim.opt.ignorecase = true       -- Ignore case letters when search
+vim.opt.smartcase = true        -- Ignore lowercase for the whole pattern
+
+-----------------------------------------------------------
+-- Tabs, indent
+-----------------------------------------------------------
+vim.opt.expandtab = true        -- Use spaces instead of tabs
+vim.opt.shiftwidth = 4          -- Shift 4 spaces when tab
+vim.opt.tabstop = 4             -- 1 tab == 4 spaces
+vim.opt.smartindent = true      -- Autoindent new lines
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
